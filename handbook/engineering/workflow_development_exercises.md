@@ -30,13 +30,13 @@ The goal of this workflow is to get emails, and analyze whether the sender's IP 
 
 - Schedules, Whois
 
-### 2. Cases: Ticket management with PagerDuty 
+### 2. Cases: Ticket management with Jira 
 The point of this usecase is to learn to make tickets, list them, and analyze their contents, before taking action.
 
-1. Make a user on Pagerduty here: [https://www.pagerduty.com/sign-up/](https://www.pagerduty.com/sign-up/)
+1. Make a user on Atlassian Jira cloud here: [https://www.atlassian.com/software/jira/free](https://www.atlassian.com/software/jira/free)
 2. Use Shuffle to create a ticket with the title "This is a test ticket for handling malware"
 3. Use the file system in Shuffle to create AND upload the Eicar test file to the same ticket: https://secure.eicar.org/eicar.com.txt
-4. List ALL tickets on your Pagerduty account and look for whether they have files in them. You should find the ticket you made above. 
+4. List ALL tickets on your Jira account and look for whether they have files in them. You should find the ticket you made above. 
 5. With the ticket, re-download the file to Shuffle.
 
 ### 3. Intel: Continuous analysis for changes
@@ -47,7 +47,7 @@ The point of this workflow is to make a list of indicators, and searching for if
 3. Use [IPInfo](https://ipinfo.io/signup) to analyze them every 30 minutes 	(Cache & Schedule)
 4. If the data changes between those 30 minutes, send yourself an email notifying you. 
 
-PS: You can test whether it changed by setting the value manually in the next iteration.
+PS: You can test whether it changed by setting the IP value manually in the next iteration.
 
 **TBD:**
 ### 4. SIEM: Run a search and make a rule
